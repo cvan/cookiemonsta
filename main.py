@@ -24,11 +24,12 @@ def minifest():
             "90": "/90.png"
         },
         "name": "Cookie App",
-        "package_path": "http://cookiemonsta.paas.allizom.org/inspector/Archive.zip",
+        "package_path": "http://people.mozilla.org/~cwiemeersch/Archive.zip",
         "size": 26151,
         "version": "0.0.4"
     }
     response = make_response(json.dumps(data, indent=2), 200)
+    response.headers['Content-Type'] = 'application/x-web-app-manifest+json'
     response.set_cookie('pro', pro)
     return response
 
