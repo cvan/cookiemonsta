@@ -1,0 +1,14 @@
+{
+    "description": "Cookie App",
+    "developer": {
+        "name": "Seavan",
+        "url": "http://mozilla.org"
+    },
+    "icons": {
+        "128": "/128.png"
+    },
+    "launch_path": "/index.html",
+    "name": "Cookie App",
+    "orientation": ["portrait-primary"],
+    "version": "0.0.6"
+}

@@ -1,8 +1,11 @@
 name: cookiemonsta
 framework:
-    type: python
+    type: node
 
-processes:
-    web: python main.py
+mem: 256m
 
-ignores: ['.git']
+hooks:
+    pre-staging:
+        - npm install
+
+ignores: ['node_modules', '.git']

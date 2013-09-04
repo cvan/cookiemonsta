@@ -19,8 +19,7 @@ dist
 .emacs.d/site/nxhtml
 .virtualenvs
 .ipython
-*.stackdump
-node_modules/
-Thumbs.db
-desktop.ini
-*.sublime-project
+*.less.css
+settings_local.js
+node_modules
+npm-debug.log
