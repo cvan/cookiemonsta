@@ -19,6 +19,7 @@ app.get('/minifest', function(req, res) {
     res.set('Content-Type', 'application/x-web-app-manifest+json');
     res.set('ETag', '"' + getETag(null, 'package/Archive.zip') + '"');
     console.log('req', req);
+    console.log('Minifest pinged. Cookie: ' + req.cookie.pro);
     res.cookie('pro', req.query.pro || '[empty]', {maxAge: 900000, httpOnly: false});
     res.send(JSON.stringify(manifest));
 });
